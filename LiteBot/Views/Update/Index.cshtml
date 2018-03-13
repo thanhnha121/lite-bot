@@ -1,0 +1,121 @@
+﻿@model dynamic
+
+<style>
+    .uk-logo {
+        width: 92px;
+        margin-left: 30px;
+        color: #fff;
+        transition: all 0.2s;
+        padding-top: 15px;
+    }
+    .uk-logo img {
+        margin-top: -4px;
+    }
+
+        .uk-logo:hover,
+        .uk-navbar-right ul li a:hover,
+        .uk-navbar-right .uk-button:hover {
+            color: #fff;
+        }
+
+    .uk-navbar-right .uk-button:hover {
+        border: 1px solid #fff;
+    }
+
+    .uk-navbar-right ul li a,
+    .uk-navbar-right .uk-button {
+        color: #ffffff;
+        color: rgba(255,255,255,.5);
+    }
+</style>
+
+
+<div class="uk-navbar-container tm-navbar-container uk-navbar-transparent">
+    <div class="uk-container uk-container-expand">
+        <nav class="uk-navbar">
+            <div class="uk-navbar-left">
+                <a href="/" class="uk-navbar-item uk-logo">
+                    <img src="/Assets/img/new-logo-white.png" class="uk-margin-small-right">
+                    LiteBot
+                </a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="/Blogs">Blogs</a></li>
+                    <li class=""><a href="/Update">Update</a></li>
+                </ul>
+                <div class="uk-navbar-item uk-visible@m">
+                    <a href="/Login" class="uk-button uk-button-default tm-button-default uk-icon"> Login </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div uk-grid class="uk-margin-large">
+    <div class="uk-width-1-5@m"></div>
+    <div class="uk-width-expand@m">
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h1 class="uk-margin-medium uk-text-center">
+                    Update
+                </h1>
+                <div>
+                    <h2 class="uk-h3">
+                        3.0.0 beta 39 <span class="uk-text-muted">(January 31, 2018)</span>
+                    </h2>
+                    <ul class="uk-list">
+                        <li>
+                            <span class="uk-label uk-label-success uk-margin-right uk-text-center uk-width-small tm-width-small">
+                                Added
+                            </span> Add link heading to Link component
+                        </li>
+                        <li>
+                            <span class="uk-label uk-label-success uk-margin-right uk-text-center uk-width-small tm-width-small">
+                                Added
+                            </span> Add Slider Parallax component
+                        </li>
+                        <li>
+                            <span class="uk-label uk-label-success uk-margin-right uk-text-center uk-width-small tm-width-small">
+                                Added
+                            </span> Add support for privacy enhanced mode in YouTube urls
+                        </li>
+                    </ul>
+
+                    <ul class="uk-list">
+                        <li>
+                            <span class="uk-label  uk-margin-right uk-text-center uk-width-small tm-width-small">
+                                Changed
+                            </span> <em>Active</em> classes are applied to all fully visible slides in Slider component
+                        </li>
+                        <li>
+                            <span class="uk-label  uk-margin-right uk-text-center uk-width-small tm-width-small">
+                                Changed
+                            </span> Allow all Lightbox Panel options to be set through Lightbox component
+                        </li>
+                    </ul>
+
+                    <ul class="uk-list">
+                        <li>
+                            <span class="uk-label uk-label-danger uk-margin-right uk-text-center uk-width-small tm-width-small">
+                                Fixed
+                            </span> Fix Tooltip in Accordion loosing title
+                        </li>
+                        <li>
+                            <span class="uk-label uk-label-danger uk-margin-right uk-text-center uk-width-small tm-width-small">
+                                Fixed
+                            </span> Fix Inverse mode (Light and Dark) in tests
+                        </li>
+                        <li>
+                            <span class="uk-label uk-label-danger uk-margin-right uk-text-center uk-width-small tm-width-small">
+                                Fixed
+                            </span> Fix component getter
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-width-1-5@m"></div>
+</div>

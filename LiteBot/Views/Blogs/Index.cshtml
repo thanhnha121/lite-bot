@@ -1,0 +1,68 @@
+﻿@model dynamic
+
+<style>
+
+    .uk-logo {
+        width: 92px;
+        margin-left: 30px;
+        color: #fff;
+        transition: all 0.2s;
+        padding-top: 15px;
+    }
+
+        .uk-logo img {
+            margin-top: -4px;
+        }
+
+        .uk-logo:hover,
+        .uk-navbar-right ul li a:hover,
+        .uk-navbar-right .uk-button:hover {
+            color: #fff;
+        }
+
+    .uk-navbar-right .uk-button:hover {
+        border: 1px solid #fff;
+    }
+
+    .uk-navbar-right ul li a,
+    .uk-navbar-right .uk-button {
+        color: #ffffff;
+        color: rgba(255,255,255,.5);
+    }
+</style>
+
+
+<div class="uk-navbar-container uk-navbar-transparent">
+    <div class="uk-container uk-container-expand">
+        <nav class="uk-navbar">
+            <div class="uk-navbar-left">
+                <a href="/" class="uk-navbar-item uk-logo">
+                    <img uk-svg="" src="/Assets/img/new-logo-white.png" class="uk-margin-small-right">
+                    LiteBot
+                </a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="/Blogs">Blogs</a></li>
+                    <li class=""><a href="/Update">Update</a></li>
+                </ul>
+                <div class="uk-navbar-item">
+                    <a href="/Login" class="uk-button uk-button-default uk-icon"> Login </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div uk-grid class="uk-margin-large">
+    <div class="uk-width-1-5@m"></div>
+    <div class="uk-width-expand@m">
+        <div class="uk-panel uk-background-default uk-padding">
+            <img class="uk-align-left uk-margin-remove-adjacent uk-width-1-4" src="/Assets/img/blogs/thanks.jpg" alt="Example image">
+            <h2>Say Thanks</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+    <div class="uk-width-1-5@m"></div>
+</div>

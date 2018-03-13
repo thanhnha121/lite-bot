@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - LiteBot</title>
+    <link rel="shortcut icon" type="image/ico" href="/Assets/img/new-logo.png" />
+    @Styles.Render("~/Content/css")
+    @if (@ViewBag.IsDashboard != null)
+    {
+        @Styles.Render("~/Content/css/controllers/dashboard")
+    }
+</head>
+<body>
+
+    @RenderBody()
+
+    <footer></footer>
+
+    @Scripts.Render("~/bundles/js")
+    @Scripts.Render("~/bundles/jqueryval")
+    @if (@ViewBag.IsDashboard != null)
+    {
+        @Scripts.Render("~/bundles/js/controllers/dashboard")
+    }
+</body>
+</html>

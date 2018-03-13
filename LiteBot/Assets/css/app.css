@@ -1,0 +1,52 @@
+﻿/* lang icon */
+language i {
+    height: 26px;
+    vertical-align: bottom;
+    color: #555;
+    margin-right: 10px;
+    width: 26px;
+    text-align: center;
+    margin-top: 3px;
+    float: left;
+}
+
+language button i {
+    margin-top: 6px;
+}
+
+.en-flag-icon {
+    background: url(../img/lang/en.svg) no-repeat 50%;
+}
+
+.vn-flag-icon {
+    background: url(../img/lang/vn.svg) no-repeat 50%;
+}
+
+.tac {
+    text-align: center;
+}
+
+body:not(.not-default) {
+    background: linear-gradient(to left top, #28a5f5, #1e87f0) 0 0 no-repeat;
+    min-height: 100vh;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Roboto+Mono';
+
+html {
+    font-family: ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
+    font-family: ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-weight: 300;
+}
+
+
+.uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle {
+    font-family: ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+.uk-logo {
+    font-family: ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}

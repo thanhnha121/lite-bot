@@ -1,0 +1,96 @@
+﻿@model dynamic
+@{
+    Layout = null;
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - LiteBot</title>
+    <link rel="shortcut icon" type="image/png" href="/Assets/img/new-logo.png" />
+    @Styles.Render("~/Content/css")
+</head>
+<body class="not-default">
+
+    <div ng-app="LiteBot" ng-controller="RegisterController">
+
+        <div class="uk-margin-top" style="width: 100%; text-align: center;">
+            <a href="/"><img src="~/Assets/img/new-logo.png" style="width: 100px;" /></a>
+        </div>
+
+        <div class="uk-child-width-1-3@m uk-grid-match uk-grid uk-margin-medium-top" uk-grid>
+            <div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">{{Lang.RegisterModule.Header}}</h3>
+                        <form>
+                            <div class="uk-inline uk-margin-small uk-width-1-1">
+                                <a class="uk-form-icon" uk-icon="icon: info"></a>
+                                <input class="uk-input uk-form-controls" type="text" 
+                                       ng-model="fullname"
+                                       placeholder="{{Lang.RegisterModule.FullnamePlaceholder}}">
+                            </div>
+                            <div class="uk-inline uk-margin-small uk-width-1-1">
+                                <a class="uk-form-icon" uk-icon="icon: mail"></a>
+                                <input class="uk-input uk-form-controls 
+                                 {{email !== '' && !isValidEmail() ? 'uk-form-danger' : ''}}" 
+                                       type="text" 
+                                       ng-model="email"
+                                       placeholder="{{Lang.RegisterModule.EmailPlaceholder}}">
+                            </div>
+                            <div class="uk-inline uk-margin-small uk-width-1-1">
+                                <a class="uk-form-icon" uk-icon="icon: user"
+                                   uk-tooltip="title: {{Lang.RegisterModule.TooltipUsername}}; pos: left"></a>
+                                <input class="uk-input uk-form-controls 
+                                 {{username !== '' && (username.length < 6 || !isValidUsername()) ? 'uk-form-danger' : ''}}" 
+                                       type="text" 
+                                       ng-model="username"
+                                       placeholder="{{Lang.RegisterModule.UsernamePlaceholder}}">
+                            </div>
+                            <div class="uk-inline uk-margin-small uk-width-1-1">
+                                <a class="uk-form-icon" uk-icon="icon: lock"
+                                   uk-tooltip="title: {{Lang.RegisterModule.TooltipPassword}}; pos: left"></a>
+                                <input class="uk-input uk-form-controls 
+                                 {{password !== '' && password.length < 8 ? 'uk-form-danger' : ''}}" 
+                                       type="password" 
+                                       ng-model="password"
+                                       placeholder="{{Lang.RegisterModule.PasswordPlaceholder}}">
+                            </div>
+                            <div class="uk-inline uk-margin-small uk-width-1-1">
+                                <a class="uk-form-icon" uk-icon="icon: lock"></a>
+                                <input class="uk-input uk-form-controls 
+                                 {{password !== '' && repeatPassword !== password ? 'uk-form-danger' : ''}}" 
+                                       type="password" 
+                                       ng-model="repeatPassword"
+                                       placeholder="{{Lang.RegisterModule.RepeatPasswordPlaceholder}}">
+                            </div>
+                            <div class="uk-margin-small uk-width-1-1">
+                                <a class="uk-button uk-button-default uk-first-column" ng-click="doRegister()">
+                                    {{Lang.RegisterModule.SubmitButtonTitle}}
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="uk-child-width-1-2@m uk-grid-match uk-grid uk-margin-medium-top" uk-grid>
+                    <div>
+                        <language></language>
+                    </div>
+                    <div>
+                        <a class="uk-link-muted uk-align-right@m" href="/Login" style="margin-top: 7px;">{{Lang.RegisterModule.HaveAccount}}</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+
+        <footer></footer>
+    </div>
+
+    @Scripts.Render("~/bundles/js")
+    @Scripts.Render("~/bundles/jqueryval")
+</body>

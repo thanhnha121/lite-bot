@@ -1,0 +1,12 @@
+﻿.db-wrapper {
+}
+
+    .db-wrapper > div > .bottom-left {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .db-wrapper > div > .top {
+        height: calc(100vh - 150px);
+    }

@@ -1,0 +1,151 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="uk-section-primary tm-section-texture">
+    <div uk-sticky="media: 960" class="uk-navbar-container tm-navbar-container uk-navbar-transparent uk-sticky uk-sticky-fixed" style="position: fixed; top: 0px; width: 1583px;">
+        <div class="uk-container uk-container-expand">
+            <nav class="uk-navbar">
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        <li><a href="/Blogs">Blogs</a></li>
+                        <li class=""><a href="/Update">Update</a></li>
+                    </ul>
+                    <div class="uk-navbar-item uk-visible@m">
+                        <a href="/Login" class="uk-button uk-button-default tm-button-default uk-icon"> Login </a>
+                    </div>
+                    <a uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle="" class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" ratio="1"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <style>
+        .tm-section-texture {
+            background: 50% 1vh no-repeat, linear-gradient(to right top, #28a5f5, #1e87f0) 0 0 no-repeat;
+        }
+
+        .tm-button-primary {
+            -ms-border-radius: 500px;
+            border-radius: 500px;
+            color: #1e87f0 !important;
+        }
+         .uk-section-small {
+             padding-top: 0;
+         }
+        .list-feature {
+            text-align: center;
+            display: inline-block;
+        }
+
+        .list-feature > div {
+            width: 120px;
+            text-align: center;
+            border: 2px dashed #fff;
+            height: 120px;
+            padding: 10px;
+            float: left;
+            margin-left: 20px;
+            border-radius: 50%;
+            opacity: .7;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            cursor: default;
+        }
+
+        .list-feature > div:hover {
+            opacity: 1;
+        }
+
+        .list-feature > div img {
+            transition: all 0.3s;
+            width: 100%;
+        }
+
+        .list-feature > div:hover img {
+            width: 40%;
+        }
+
+        .list-feature div .title {
+            position: absolute;
+            bottom: 10px;
+            transition: all 0.3s;
+            width: calc(100% - 20px);
+            height: 0px;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        .list-feature div:hover .title {
+            display: block;
+            height: 60px;
+        }
+    </style>
+
+    <div uk-height-viewport="offset-top: true; offset-bottom: true" class="uk-section uk-section-small uk-flex uk-flex-middle uk-text-center" style="box-sizing: border-box; min-height: calc(100vh - 183px); height: calc(100vh - 183px);">
+        <div class="uk-width-1-1">
+
+            <h1 class="uk-margin-medium" style="font-size: 128px; font-style: italic; font-weight: 400;">LiteBot</h1>
+
+            <div class="uk-container">
+
+                <div class="list-feature">
+                    <div>
+                        <img src="/Assets/img/home/facebook.svg" />
+                        <div class="title">Connect With Your Account</div>
+                    </div>
+                    <div>
+                        <img src="/Assets/img/home/user.svg" />
+                        <div class="title">Manage Your Users</div>
+                    </div>
+                    <div>
+                        <img src="/Assets/img/home/calendar.svg" />
+                        <div class="title">Plan Your Business</div>
+                    </div>
+                    <div>
+                        <img src="/Assets/img/home/list.svg" />
+                        <div class="title">Control Your <br />Task</div>
+                    </div>
+                    <div>
+                        <img src="/Assets/img/home/stopwatch.svg" />
+                        <div class="title">
+                            Save Your <br />Time
+                        </div>
+                    </div>
+                </div>
+
+                <p class="uk-margin-medium uk-text-lead" style="font-weight: 300;">
+                    A lightweight and simple way
+                    <br>
+                    for creating your online bot.
+                </p>
+                <div uk-grid="" class="uk-child-width-auto uk-grid-medium uk-flex-inline uk-flex-center uk-grid">
+                    <div class="uk-first-column">
+                        <a href="/Dashboard" class="uk-button uk-button-primary tm-button-primary uk-button-large tm-button-large uk-visible@s">Get Started</a> <a href="./docs" class="uk-button uk-button-primary tm-button-primary uk-hidden@s">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-small">
+
+        <div class="uk-container uk-container-expand uk-text-center uk-position-relative">
+            <ul uk-margin="" class="uk-subnav tm-subnav uk-flex-inline uk-flex-center uk-margin-remove-bottom">
+                <li class="uk-first-column">
+                    <span>
+                        Version 1.0.0
+                    </span>
+                </li>
+
+                <li>
+                    <a href="/">
+                        <span uk-icon="icon: gitter" class="uk-margin-small-right uk-icon">
+                        </span>Community
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

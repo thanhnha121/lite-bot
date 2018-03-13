@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiteBot", "LiteBot\LiteBot.csproj", "{9EF20692-5704-454C-9D54-85F87DB9B6A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EF20692-5704-454C-9D54-85F87DB9B6A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF20692-5704-454C-9D54-85F87DB9B6A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF20692-5704-454C-9D54-85F87DB9B6A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF20692-5704-454C-9D54-85F87DB9B6A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDC9A8BA-5B03-4029-8427-212767F98842}
+	EndGlobalSection
+EndGlobal

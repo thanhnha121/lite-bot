@@ -1,0 +1,63 @@
+﻿@model dynamic
+@{
+    Layout = null;
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password - LiteBot</title>
+    <link rel="shortcut icon" type="image/png" href="/Assets/img/new-logo.png" />
+    @Styles.Render("~/Content/css")
+</head>
+<body class="not-default">
+
+    <div ng-app="LiteBot" ng-controller="ForgotPasswordController">
+
+        <div class="uk-margin-top" style="width: 100%; text-align: center;">
+            <a href="/"><img src="~/Assets/img/new-logo.png" style="width: 100px;" /></a>
+        </div>
+
+        <div class="uk-child-width-1-3@m uk-grid-match uk-grid uk-margin-medium-top" uk-grid>
+            <div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover">
+                    <div class="uk-card-body" ng-show="!isSentEmail">
+                        <h3 class="uk-card-title">{{Lang.ForgotPasswordModule.Header}}</h3>
+                        <form>
+                            <div class="uk-inline uk-margin-small uk-width-1-1">
+                                <a class="uk-form-icon" href="#" uk-icon="icon: mail"></a>
+                                <input class="uk-input uk-form-controls" type="text" placeholder="{{Lang.ForgotPasswordModule.EmailPlaceholder}}">
+                            </div>
+                            <a class="uk-button uk-button-default uk-first-column" ng-click="sendEmail()">
+                                {{Lang.ForgotPasswordModule.SubmitButtonTitle}}
+                            </a>
+                        </form>
+                    </div>
+
+                    <div class="uk-card-body" ng-show="isSentEmail">
+                        <p>{{Lang.ForgotPasswordModule.SuccessSentEmailAlert}}</p>
+                    </div>
+
+                </div>
+
+                <div class="uk-child-width-1-2@m uk-grid-match uk-grid uk-margin-medium-top" uk-grid>
+                    <div>
+                        <language></language>
+                    </div>
+                    <div>
+                        <a class="uk-link-muted uk-align-right@m" href="/Login" style="margin-top: 7px;">{{Lang.ForgotPasswordModule.LoginButtonTitle}}</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+
+        <footer></footer>
+    </div>
+
+    @Scripts.Render("~/bundles/js")
+    @Scripts.Render("~/bundles/jqueryval")
+</body>
